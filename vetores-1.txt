@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		cadeia nome[5] = {"Thiago", "João", "Japa", "Tango", "Janilda"}
+		
+		para(inteiro i =  0; i <= 4; i++){
+			escreva(nome[i] +"," + "\n")
+		}
+ 
+	}
+ 
+}
+

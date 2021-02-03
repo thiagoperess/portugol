@@ -1,0 +1,69 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nomes[3] = {"Amanda", "Ranhento", "Estranho"}
+		real notas[3][4] = {{10.0, 10.0, 10.0, 9.0}, {7.0, 8.0, 8.0, 6.0}, {5.0, 6.0, 7.0, 5.0}}
+		real medias[3]
+		media(notas, medias)
+		inteiro aluno
+		escreva("Digite seu id: ")
+		leia(aluno)
+		cadeia apr
+		se(aprovadx(medias[aluno])){
+			apr="Aprovadx"
+		} senao {
+			apr="Reprovadx"
+		}
+
+		geraRelatorio(nomes[aluno],notas[aluno][0],notas[aluno][1],notas[aluno][2],notas[aluno][3],medias[aluno],apr)
+	}
+
+	funcao logico aprovadx(real nota){
+		se(nota >= 6){
+			retorne verdadeiro
+		} senao {
+			retorne falso
+		}
+  	}
+
+  	funcao media(real notas[][], real &medias[]){
+  		para(inteiro l  = 0; l < 3; l++){
+			real sum = 0.0
+			para(inteiro c = 0; c < 4; c++){
+				sum += notas[l][c]
+			}
+
+			medias[l] = sum/4
+		}
+  	}
+
+  	funcao escreveLinha(logico forte){
+		se(forte){
+			escreva("========================\n")
+		} senao {
+			escreva("------------------------\n")
+		}
+  	}
+
+  	funcao geraRelatorio(cadeia nome, real b1, real b2, real b3, real b4, real avr, cadeia apr){
+  		escreveLinha(verdadeiro)
+		escreva("      Alunx: "+nome,"\n")
+		escreveLinha(falso)
+		escreva("      1º BIM: "+b1,"\n")
+		escreva("      2º BIM: "+b2,"\n")
+		escreva("      3º BIM: "+b3,"\n")
+		escreva("      4º BIM: "+b4,"\n")
+		escreveLinha(falso)
+		escreva("      Média: "+avr,"\n")
+		escreveLinha(falso)
+		escreva("      ",+apr,"\n")
+		escreveLinha(verdadeiro)
+  	}
+}
+
+
+
+
+

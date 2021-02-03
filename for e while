@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i = 1
+		enquanto(i <= 100){
+			escreva(i+", ")
+			i++
+		}
+		escreva("\n")
+
+		para(inteiro j = 100 ; j >= 0 ; j--){
+			escreva(j+", ")
+		}
+	}
+} 

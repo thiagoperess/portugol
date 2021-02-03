@@ -1,0 +1,13 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia idiomas[8] = {"Japonês", "Português", "Chinês", "Francês", "Português", "Alemão", "Italiano", "Chinês"}
+		inteiro pais
+		escreva("Escolha um país: \n(0) Japão\t(4) Portugal\n(1) Brasil\t(5) Alemanha\n(2) China\t(6) Itália\n(3) França\t(7) Hong-Kong\n\n")
+		leia(pais)
+		escreva(idiomas[pais])
+	}
+}
+

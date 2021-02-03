@@ -1,0 +1,43 @@
+programa{
+	
+	funcao inicio(){
+		cadeia nomes[3] = {"Amanda", "Ranhento", "Estranho"}
+		real notas[3][4] = {{10.0, 10.0, 10.0, 9.0}, {7.0, 8.0, 8.0, 6.0}, {5.0, 6.0, 7.0, 5.0}}
+		real medias[3]
+		
+		para(inteiro l  = 0; l < 3; l++){
+			real sum = 0.0
+			para(inteiro c = 0; c < 4; c++){
+				sum += notas[l][c]0
+			}
+
+			medias[l] = sum/4
+		}
+
+		inteiro aluno
+		escreva("Digite seu id: ")
+		leia(aluno)
+		cadeia apr
+		se(medias[aluno] > 9.0){
+			apr="Aprovadaçx!"
+		} senao se(medias[aluno] >= 6.0 e medias[aluno] < 9.0){
+			apr="Aprovadx!"
+		} senao {
+			apr = "Reprovadx!"
+		}
+
+		escreva("========================","\n")
+		escreva("      Alunx: " +nomes[aluno],"\n")
+		escreva("------------------------","\n")
+		escreva("      1º BIM: "+ notas[aluno][0],"\n")
+		escreva("      2º BIM: "+ notas[aluno][1],"\n")
+		escreva("      3º BIM: "+ notas[aluno][2],"\n")
+		escreva("      4º BIM: "+ notas[aluno][3],"\n")
+		escreva("------------------------","\n")
+		escreva("      Média: "+ medias[aluno],"\n")
+		escreva("------------------------","\n")
+		escreva("      ",+apr,"\n")
+		escreva("========================")
+	}
+}
+

@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real nota
+		escreva("Insira a nota: ")
+		leia(nota)
+		se(nota < 0.0 ou nota > 10.0){
+			escreva("Nota inválida' ","(",nota,")")
+		} senao se(nota <=  4.0){
+			escreva("Você está reprovado!")
+		} senao se(nota > 4.0 e nota < 6.0){
+			escreva("Você está na recuperação!")
+		} senao se(nota > 6.0 e nota < 8.0){
+			escreva("Você está aprovado!")
+		} senao {
+			escreva("Você é um destaque!")
+		}
+	}
+}

@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro pais
+		escreva("Escolha um país: \n(1) Japão\t(5) Portugal\n(2) Brasil\t(6) Nigéria\n(3) China\t(7) Lituânia\n(4) Jordânia\t(8) Hong-Kong\n")
+		leia(pais)
+		escreva("País: ")
+		escolha(pais){
+			caso 1: escreva(pais," Japonês")
+			pare
+			caso 2: escreva(pais," Português")
+			pare
+			caso 3: escreva(pais," Português")
+			pare
+			caso 4: escreva(pais," Sei lá")
+			pare
+			caso 5: escreva(pais," Chinês")
+			pare
+			caso 6: escreva(pais," Não sei")
+			pare
+			caso 7: escreva(pais," Também não")
+			pare
+			caso 8: escreva(pais," Chinês?")
+			pare
+			caso contrario: escreva("Escolha um país válido!")
+		}
+	}
+}
+
